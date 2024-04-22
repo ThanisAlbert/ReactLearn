@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Home from "./Home";
+import Contactus from "./Contactus";
+import { Routes, Route, Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function App() {
 
@@ -14,7 +18,17 @@ export default function App() {
 
   return (
     <div>
-      <Header changevariablecolor={changevariablecolor}   changeconstcolor={changeconstcolor} colorname={color}></Header>     
+
+<Header changevariablecolor={changevariablecolor}   changeconstcolor={changeconstcolor} colorname={color}></Header>     
+   
+
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="contactus" element={<Contactus />} />
+      </Routes>  
+    
+    <Footer></Footer>
+    
     </div>
   );
 }

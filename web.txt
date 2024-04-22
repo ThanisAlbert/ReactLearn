@@ -1,0 +1,2177 @@
+https://www.youtube.com/watch?v=hRSj2n-XKGM
+
+
+Pandas Dataframe
+================
+
+https://www.geeksforgeeks.org/different-ways-to-create-pandas-dataframe/
+
+python -m notebook
+
+
+import pandas as pd
+
+data_rl = [{'desc': 'C9200L-24T-4X-E', 'Total': '95372.43', 'qty': '1.00', 'unit': 95372.43, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'}, 
+{'desc': 'CON-SNT-C920L24X', 'Total': '50182.80', 'qty': '1.00', 'unit': 50182.8, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'},
+{'desc': 'CAB-TA-IN', 'Total': '0.00', 'qty': '1.00', 'unit': 0.0, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'}, 
+{'desc': 'C9200L-DNA-E-24', 'Total': '0.00', 'qty': '1.00', 'unit': 0.0, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'},
+{'desc': 'C9200L-DNA-E-24-5Y', 'Total': '29618.64', 'qty': '1.00', 'unit': 29618.64, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'}, 
+{'desc': 'NETWORK-PNP-NONE', 'Total': '0.00', 'qty': '1.00', 'unit': 0.0, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'}, 
+{'desc': 'SFP-10G-LR-S', 'Total': '159967.44', 'qty': '4.00', 'unit': 39991.86, 'file_path': 'D:\\Santhosh\\Script\\Bot825\\Script\\Bot825_Project\\Bot_files\\Input_folder\\sk_inter\\GTSPO-2324137_20240219120419.989_X.pdf'}]
+
+df = pd.DataFrame(data_rl)
+df.to_excel("output.xlsx")
+
+
+data_rl = ["one","two","three","four","five"]
+
+
+df = pd.DataFrame(data_rl,columns=["Number"])
+df = pd.DataFrame(data, index=['first', 'second'])
+
+
+pandas.DataFrame(data, index, columns)
+
+
+df_concatenated = pd.concat([df, df2], axis=1)
+
+df_concatenated
+
+
+
+GitHUB
+======
+
+git clone https://github.com/ThanisAlbert/Red_Bot_564_StockAllocation.git
+git status
+git add redbot_564.xlsm
+git commit -m "message"
+git push origin main
+
+git log --oneline
+
+insert->add->commit->push
+
+
+git pull  (to get all changes done in file)
+git branch
+git branch -a
+git checkout thanisbranch
+change/add file
+git checkout main
+git merge ramesh 
+git push origin main
+
+
+get checkout suresh
+git pull origin main
+
+
+
+How to make folder as github
+============================
+
+git init
+git add .
+git commit -m
+create repositor in github
+copy the comments from git hub like branch and add remote
+git push origin main
+
+
+eclipse
+======
+if error rightclick run maven as update
+if error rightclick run maven as clean install
+
+
+Vpn
+===
+Redservindia
+thanis.albert@redingtongroup.com
+Migrate@0311
+
+
+
+Nodejs
+=======
+
+npm config set strict-ssl false
+npm install -g create-react-app
+npx create-react-app CustomName
+or
+create-react-app customname
+cd customname
+npm start
+
+Postman
+=======
+http://example.com/api/{param}
+key and value as param
+
+http://172.24.3.13:8080/itnext/api/create-project/
+Body tab
+select rawdata
+Json data 
+
+{
+"project": "123",
+"projectname": "Sample Project"
+}
+
+
+Godaddy
+=======
+
+How to add new domain name in godaddy?
+
+create addon domain with site address. Example www.sriabiramibuilders.com  (real domain name already bought)
+
+Take ns1 and ns2 server details and share to host owner
+
+In public html folder will be created to host site
+
+paste python web app inside folder
+
+Python version is important
+
+
+
+Bootstrap Template
+===================
+
+https://www.free-css.com/free-css-templates
+
+
+Spring Boot
+==========
+
+
+Install eclipse tools with web
+
+In eclips market - add - spring boot aka - To startup project
+
+spring.datasource.url=jdbc:sqlserver://EC2AMAZ-C6LDAEE\\SQLEXPRESS;databaseName=redservbots;portNumber=1433;encrypt=true;trustServerCertificate=true;
+spring.datasource.username=sa
+spring.datasource.password=Redserv@123
+
+Start > Control Panel > Systems & Security > Administrative tools > Services
+
+Select SQL Server Browser Right click and select properties.
+
+Set start type as Automatic. Click on Apply > click on start > click on Ok
+
+controller should not be in seperate package (need to test)
+
+
+
+SQL Server
+===========
+
+Sql configuration manager
+
+Protocol for sqlexpress
+
+    TCP/IP - enable it
+    Right click ----> properties ----> TCP port - 1433 for all secction
+
+SQL SERVICES
+     
+    sql browser - make it running - if not running - right click - startup as automatic
+
+SQL Server
+    
+    Restart the server - Must
+    
+
+
+
+
+
+Image Size Reducer
+=================
+
+https://www.resizepixel.com/download
+I love pdf
+
+
+React Js
+========
+
+https://www.youtube.com/watch?v=9hb_0TZ_MVI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=2
+
+Install node.js
+
+npm set strict-ssl false
+
+create folder and navigate into the folder
+
+npx create-react-app learn-react
+
+npm start
+
+//New
+
+
+
+Component should start with uppercase otherwise it won't work
+
+Functional Component
+===================
+
+
+import React from "react";                                  import React from 'react'
+                               
+const Header=() =>{                                         function App() {
+                                                             return (
+    return(                                                         <div>
+      <div>Header</div>                or                               <Header></Header>
+    );                                                              </div>
+                                                                    );
+};                                                          } 
+
+
+export default Header;                                      export default App;
+
+
+Class Component
+===============
+
+import React from "react";
+
+class AddContact extends React.Component{
+   
+    render(){
+
+          return(  
+
+            <h2>Add Contact</h2>     
+        
+          );
+
+    }     
+
+}
+
+export default AddContact;
+
+
+How to use function inside function
+===================================
+
+It is an arrow function
+
+const example =()=>{
+}
+
+
+
+change properties
+=================
+
+import React from "react";
+import { useState } from "react";
+
+const Header = ()=>{
+
+    const[color, setColor]=useState("yellow")
+
+    const changecolor=(colorname)=>{
+        setColor(colorname)
+    }
+
+    const changecolornew = ()=>{
+        setColor("blue")  
+    }
+
+
+    return(
+        <div>
+        <div>Header in {color} color</div>
+        <button onClick={()=>changecolor("red")}>Clickme</button>
+        <button onClick={changecolornew}>Clickme</button>  
+        </div>
+    )
+
+}
+
+export default Header
+
+
+
+
+Call function inside function and passing function to child to child
+====================================================================
+
+
+import { useState } from "react";
+import Button from "./Button";
+
+const Header = () =>{
+
+    const [color, setColor] = useState("yellow");
+    
+    const changecolor = (colorname) =>{
+        setColor(colorname);
+    }
+
+   return(
+      
+      <div>Header in {color}   
+           <br></br>
+           <Button colorname={color} changecolor={changecolor}></Button>
+      </div>
+
+   );
+
+}
+
+export default Header;
+
+
+
+Button
+=======
+
+import Subbutton from "./Subbutton";
+
+const Button = (props) =>{
+
+   const Changethecolor = (colorname) =>{     
+    props.changecolor(colorname);
+   }
+
+
+   return(
+     <div>Button is {props.colorname} 
+     <Subbutton changecolor= {Changethecolor} colorname={props.colorname}></Subbutton>
+     </div>
+
+   );
+
+}
+
+export default Button;
+
+
+
+Subbutton
+=========
+
+const Subbutton = (props) =>{
+
+    const colorname = "orange";
+
+    const changecolorto = () =>{
+        
+        props.changecolor(colorname);
+
+    }
+
+    return(
+    <div>    
+    <button type="button" onClick={changecolorto}  >I am Sub button in {props.colorname}</button>
+    </div>
+    );
+
+}
+
+export default Subbutton;
+
+
+one more example
+================
+
+Header.js
+=========
+
+import React from "react";
+import { useState } from "react";
+import SubHeader from "./SubHeader";
+
+const Header = ()=>{
+
+    const[color, setColor]=useState("yellow")
+
+    const changecolor=(colorname)=>{
+        setColor(colorname)
+    }
+
+    const changecolornew = ()=>{
+        setColor("blue")  
+    }
+
+    return(
+        <div>
+            <div>Header in {color} color</div>
+            <button onClick={()=>changecolor("red")}>Clickme</button>
+            <button onClick={changecolornew}>Clickme</button>
+            <SubHeader changethiscolor={changecolor}></SubHeader>
+        </div>
+    )
+
+}
+
+export default Header
+
+
+SubHeader.js
+============
+
+import React from "react";
+import { useState } from "react";
+
+
+const SubHeader=(props)=>{
+
+
+    const changecolor =()=>{
+        props.changethiscolor("red")
+    }
+
+   
+    return(
+          <div>
+              Subheader
+              <button onClick={changecolor}>Clickmesubheader</button>
+          </div>
+
+    )
+
+
+}
+
+
+export default SubHeader
+
+
+Result
+======
+When we click button in subheader it changes value in header
+
+
+
+Const
+======
+
+const fruits = ['apple','banana','orange']
+const name = {firstname:"Thanis", secondname: "Albert"}
+const car =[{model:"chevrolet"},{model:"ford"}]
+
+const print = () => {
+   
+return( <div>
+         <h1>{fruits[0]}</h1>
+         <h1>{name.firstname}</h1>
+         <h1>{car[0].model}</h1>
+</div>  )   
+
+}
+
+export default print
+
+
+useState
+=========
+
+const[fruits, setfruits]=useState( [{ name: 'Apple' },
+    { name: 'Apricot' },{ name: 'Pomelo' }])
+
+
+const addfruits=()=>{
+
+        setfruits((data) => [
+            ...data,
+            { name: "orange" },
+          ]);
+
+    }
+
+      {fruits.map(data => (
+        <p>{data.name}</p>
+      ))
+
+
+const addcolor = () => {
+  setcolorname((data) => [
+    { ...data[0], colorname: "blue" },
+  ]);
+};
+
+
+const[person, setperson] = useState({firstname:"Thanis",secondname:"Albert"})
+
+ const changeperson=()=>{
+    
+    setperson((data)=>(
+      {...data,firstname:"albert"}
+      ))
+
+  }
+
+ const changeperson=()=>{
+    
+    setperson((data)=>({
+      ...data,
+      initial:"Cruz"
+    }));
+
+  }
+
+
+const[contacts,setcontacts]=useState("Thanis")
+
+setcontacts("Albert")
+
+
+print
+=====
+{contacts[0].firstname}
+{contacts.firstname}
+{contacts}
+
+
+useRef
+======
+const divref = useRef()
+<div ref={divref} onClick={changestyle}>Reference Check</div>
+const changestyle=()=>{
+    divref.current.style.color='blue'    
+}
+
+
+Router
+======
+
+w3 school
+
+npm i -D react-router-dom  (check json file)
+
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>  layout 
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+npm install react-router-dom@6 --save
+
+https://www.youtube.com/watch?v=elLGY939Oss&t=512s
+
+General we navigate from page to page
+In React we navigate from componenet to component
+
+
+link is like hyperlink in html to navigate from one page to another page 
+In react we need route configure to navigate from one componenet to another component to use link
+
+
+In index.js
+===========
+import { BrowserRouter } from 'react-router-dom';
+ <BrowserRouter>
+    <App />
+  </BrowserRouter>
+
+In App.js
+=========
+
+import { Routes, Route, Link } from "react-router-dom";
+return (
+    <div>
+
+     <Header changevariablecolor={changevariablecolor}   changeconstcolor={changeconstcolor} colorname={color}></Header> 
+
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="contactus" element={<Contactus />} />
+      </Routes>  
+
+     <Footer>
+
+    </div>
+  );
+
+
+In Home.js
+==========
+import { Link } from "react-router-dom";
+export default function Home(){
+  return(
+        <div>            
+            <p>Home Page</p>
+            <nav>
+                <Link to="/contactus">Contactus</Link>
+            </nav>
+        </div>
+  )
+}
+
+If we click contactus link It will load contactuscomponent alone.  header and footer will not load again but display as intially rendered once. check in react component in chrome page. slash is must. 
+
+
+In Contactus.js
+===============
+import { Link } from "react-router-dom";
+export default function Home(){
+  return(
+        <div>            
+            <p>Contact Us Page</p>
+            <nav>
+                <Link to="/Home">Home</Link>
+            </nav>
+        </div>
+  )
+}
+
+If we click home link It will load Homecomponent alone. header and footer will not load again but display as intially rendered once.check in react component in chrome page. slash is must
+
+
+Axios
+=====
+
+npm i axios
+npm i axios react-router-dom
+
+ const[email, setemail] =useState("")
+ const[password,setpassword]=useState("")
+ const header = {"Access-Control-Allow-Origin":"*"};
+ 
+ write
+ ===== 
+ const handlesubmit=(e)=>{
+    e.preventDefault();
+    console.log("Clicked");
+    axios
+     .post("https://65bd9dcab51f9b29e93394b2.mockapi.io/crud-youtube",{
+        email:email,
+        password:password,
+        header,        
+     })
+
+     .then(()=>{
+      navigate("/read")
+    });
+
+  }
+
+ Read
+ =====
+ const [data,setdata] =useState([]);
+ const getdata=()=>{
+     axios
+        .get("https://65bd9dcab51f9b29e93394b2.mockapi.io/crud-youtube")
+        .then((res)=>{        
+             console.log(res.data);
+             setdata(res.data);            
+         });
+  }
+
+ Display
+ =======
+  {
+    data.map((eachdata)=>{         
+        return(
+            <>
+            <td>{eachdata.id}</td>
+            </>
+            )
+       })
+  }
+
+ Delete
+=========
+
+ const datadelete=(id)=>{
+      console.log(id)
+      axios
+      .delete(`https://65bd9dcab51f9b29e93394b2.mockapi.io/crud-youtube/${id}`)
+      .then(()=>{
+        getdata()
+      })
+  }
+ 
+  <td><button className='btn-danger' onClick={()=>datadelete(eachdata.id)}>Delete</button></td>
+
+
+Update
+======
+
+const handleupdate=(e)=>{
+    
+    e.preventDefault();
+    axios
+    
+    .put(`https://65bd9dcab51f9b29e93394b2.mockapi.io/crud-youtube/${id}`,{
+        email:email,
+        password:password,  
+    })
+
+    .then(()=>{
+      navigate("/read")
+    });
+
+
+   }
+
+
+ <button type="submit" onClick={handleupdate}  className="btn btn-primary">Update</button>
+
+
+Symbol is must below esc button
+
+          
+Crud
+====
+
+django rest api = https://www.geeksforgeeks.org/django-rest-api-crud-with-drf/
+
+
+Map
+===
+const myArray = ['apple', 'banana', 'orange'];
+const myList = myArray.map((item) => <p>{item}</p>)
+
+
+
+Power Automate
+==============
+
+https://www.youtube.com/watch?v=KLVh2s4w0h0&list=PLZVSOFwGx4zA3MluKzbxq5Nx18gj5kt5d&index=1
+
+
+
+
+
+Godaddyhosting
+==============
+
+Go to account-->products--->web server select---> Server Manage--->ssh off (default)
+
+Install python recent version
+
+Test if works
+
+later enable ssh on and logoff and login
+
+ssl certificate
+===============
+
+https://www.youtube.com/watch?v=DZOBGDE_EB8
+
+
+How to get ssl certificate in godaddy
+======================================
+
+Buy ssl in godaddy while buying download private key and crt txt download for latter use
+It will be in processing status
+mail will be received and check later with 15 minutes
+check the mail and download certificates from godaddy and upload as per instruction provided in videos
+
+
+IS Hostings
+============
+Turn on windows features ->iis->worldwidewebservices->applicationdevelopmentfeatures->cgi
+
+pip3 install fake-useragent==0.1.13
+
+pipinstall wfastcgi
+
+Create web.config in project folder
+https://www.codegrepper.com/code-examples/whatever/web.config+django
+
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <handlers>
+            <add name="appredservquiz"
+                 path="*"
+                 verb="*"
+                 modules="FastCgiModule"
+                 scriptProcessor="C:\Users\38100897\AppData\Local\Programs\Python\Python310\python.exe|C:\Users\38100897\AppData\Local\Programs\Python\Python310\Lib\site-packages\wfastcgi.py"
+                 resourceType="Unspecified"
+                 requireAccess="Script"/>
+        </handlers>
+    </system.webServer>
+    <appSettings>
+        <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()" />
+        <add key="PYTHONPATH" value="C:\Automation\Python\Redservquiz" />
+        <add key="DJANGO_SETTINGS_MODULE" value="Redservquiz.settings" />
+    </appSettings>
+</configuration>
+
+
+Dont copy the project with venv folder it will not work. Make venv folder inside the server then copy the project
+
+if still not fetching files. Please check if any space is added in the file url
+
+Handlermapping error
+===================
+
+If script processor is not working in given web.config file then 
+copy the path and paste it in iis Handler mapping manually
+check if any space error is present
+
+Python.exe not
+
+python.exe spelling should be added 
+
+
+Follow
+=======
+
+addwebsite
+
+sitenamefolder
+sitenamepath
+
+Serverclick--->fastcgisettings--->addaplication--->fullpath:python.exe--->argument:wfastcgi.py
+
+C:\Users\38100897\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\38100897\AppData\Local\Programs\Python\Python310\Lib\site-packages\wfastcgi.py
+
+click project---->doubleclick handler mappings--->automatically will add mapp--->if error comes-->clicproject--->confeditor--->section-->system.webServer/handlers-->from--->applicationhost.config--->click unlock section
+
+
+
+iF ERROR
+========
+
+CLICK SERVER--> APPLICATION POOLS ---->SET APPLICATION POOL DEFAULTS--->CHANGE iDENTITY to Local System
+
+
+static file config
+==================
+https://stackoverflow.com/questions/32312590/how-to-fetch-static-css-files-with-django-on-iis
+
+https://www.youtube.com/watch?v=ZU-LEozenAg
+https://stackoverflow.com/questions/34199976/iis-config-error-this-configuration-section-cannot-be-used-at-this-path#:~:text=Config%20error%3A%20This%20configuration%20section,legacy%20allowOverride%3D%22false%22.
+
+(or)
+
+python manage.py try collectstatic 
+
+
+FileUpload Error
+================
+
+double click project and click configuration editor 
+select system.webServer/serverRuntime
+change uploadrehead size to 10485760
+double click server filter fascgi setting 
+edit activity timeout 500 idle timeout 500 request timeout 500
+
+
+
+Hosting details
+================
+godaddy
+jesuschrist143
+Antony@143
+https://dcc.godaddy.com/domains
+
+cpanel
+======
+gi1h2waggl41 - working username
+Antony@143
+
+source /home/gi1h2waggl41/virtualenv/MicrosoftCustomer/3.7/bin/activate && cd /home/gi1h2waggl41/MicrosoftCustomer
+
+Billing details
+===============
+14Nov@2021
+
+
+virtual env creation for djanago packages
+=========================================
+
+py -m venv myproject
+
+myproject\Scripts\activate.bat
+
+pip install django
+    or
+python -m pip install django
+
+python -m django startproject mysite
+
+python -m pip install pdf-miner
+python -m pip install selenium==4.1.0
+pip install pillow
+pip install pywin32
+
+To fix Python Django stops working with RuntimeError: populate() isn’t reentrant, we can make a change to django/apps/registry.py
+
+raise RuntimeError("populate() isn't reentrant")
+
+self.app_configs = {}
+
+https://www.youtube.com/watch?v=o2R4nK9ulVY&list=PLJRGQoqpRwdfgaQujSZMzrG7AkRlbjRkC
+===================================================================================
+
+
+Build Project
+=============
+
+django-admin startproject webproject  (or) python -m django startproject mysite
+
+use project in pycharm
+
+cd webproject
+
+python manage.py runserver(test)
+
+python manage.py startapp name
+
+create urls.py in newapp --->create function in views -->connect view using urls
+
+===============================================================================
+from django.urls import path
+from . import  views
+
+app_name="Redbot"
+
+urlpatterns = [
+    path('', views.Rebot_track,name='Redbot'),
+    path('download', views.Redbot_download,name='Redbotdownload')
+]
+
+views
+=====
+def Rebot_track(request):
+
+    return HttpResponse("Redbottracker")  //refer w3school
+    return render(request,'result.html',context)  //refer w3school 
+    return HttpResponseRedirect('/upgrade/index.html') //refer w3school
+    return redirect('test:index')
+
+
+Register app
+=============
+
+Register app in settings
+
+
+
+==================================================================================
+
+connect mainproject url ---->newapp url
+
+App app in Installed_apps
+
+path('members/', include('members.urls')),
+
+How does link work
+==================
+
+The link matches members/ in project url first and include app members.urls and call the name matches in app
+
+After / urlname will be overridden if incase update/1 or add/1 found in link. In this case 1 will be replaced with form action link
+
+path('', views.index, name='index'),
+path('add', views.add, name='add'),
+path('addrecord',views.addrecord,name='addrecord'),
+path('deleterecord/<int:id>',views.deleterecord, name='deleterecord'),
+path('update/<int:id>',views.update,name='update'),
+path('update/updaterecord/<int:id>',views.updaterecord, name='updaterecord')
+
+
+http://127.0.0.1:8000/members
+http://127.0.0.1:8000/membersadd
+http://127.0.0.1:8000/membersaddrecord
+
+create models-->Register app in settings-->makemigration --->register with admin and populate data if required (or) create template and get model api and populate data in template
+
+Howtocreatetemplate
+===================
+
+https://stackoverflow.com/questions/1926049/django-templatedoesnotexist
+
+create templates folder in app
+followed by
+
+create folder name as app in templates folder ---> place html file
+
+form = createuserform()
+context={
+          'form':form,
+        }
+render(response,'app/index.html',context)
+
+
+python manage.py runserver 172.24.0.141:8000
+
+
+Snippets
+========
+
+Image Upload
+============
+
+  Settings
+  -------
+  MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+  or
+  MEDIA_ROOT = 'media/'
+  MEDIA_URL = "/media/"
+
+  urls
+  ====
+  from django.urls import path
+  from django.views.static import serve
+  from django.urls import re_path as url
+
+  if settings.DEBUG:
+    urlpatterns += [url(r'^media/(?P<path>.*)$',serve,{'document_root':settings.MEDIA_ROOT,}), ]
+
+  Models
+  -----
+  emp_image = models.ImageField(blank=True,null=True,upload_to="Image/")
+  
+ 
+  Views
+  -----
+  anniversary_image = request.FILES['upload']
+
+  
+  Form
+  ----
+
+  <form action="{% url 'Amalaannai:anniversary' %}" enctype="multipart/form-data" method="POST"></form> 
+
+
+  This will create media folder in project folder followed by it will create image folder and paste the images in image folder
+
+
+
+Bootstrapdate
+=============
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+ $( "#submitdate" ).datepicker({
+          format: 'dd/mm/yyyy',
+          orientation: 'bo#8BD182 to'
+         });
+
+<input style="font-size:14px" type = "text" id = "submitdate" name="submitdate">
+
+
+
+
+Bootstraptemplate
+=================
+
+Create Static folder inside app and create appnamed folder and place all staticfiles 
+ 
+
+Bootstrap Html
+{% load static %}
+<link rel="stylesheet" href="{% static 'church/assets/bootstrap/css/bootstrap.min.css' %}">
+
+
+The above set up will run only for django development server
+
+Then
+
+python manage.py collectstatic to collect static files 
+
+Now this will run in IIS and django server yet to check godaddyserver
+
+urls.py
+========
+from django.conf.urls.static import static
+
+if settings.DEBUG is True:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+settings.py
+===========
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+
+
+Formprocess
+==========
+   app_name="Redington"
+   path('submitform', views.submitform,name='submitform'), 
+
+   <form name = "form" enctype = "multipart/form-data"
+         action = "{% url 'Redington:submitform' %}" method = "POST" >
+         {% csrf_token %}
+    <input id="submit" type="submit" value="submit">
+   </form>    
+
+
+    firstname = request.POST['first_name']
+    lastname = request.POST['last_name']
+    phone=request.POST['phone']
+    email=request.POST['email']
+    body=request.POST['body']
+    comments = request.POST.get('comments') //for testarea   
+
+    contactform = models.contactform(id,firstname,lastname,phone,email,body)
+    contactform.save()
+    return render(request,'result.html',{'result':'Datasaved'})
+
+
+    if request.method=="POST":
+
+        request.session['username'] = request.POST['empid']
+
+        loginid = request.POST['empid']
+        loginpassword = request.POST['emppassword']
+
+        user = logindetails.objects.filter(empid=loginid ).values()
+
+        loginid = user[0]["empid"]
+
+        context = {
+              'loginid': user[0]["empid"],
+              'loginpassword':user[0]["emppassword"]
+            }
+
+        return render(request, 'sports/index.html', context)
+
+Session
+=======
+
+request.session['username'] = request.POST['empid']
+
+if 'username' in request.session:
+del request.session['username']
+
+
+Model register
+=============
+ def __str__(self):
+        return self.empid
+
+Model name change
+=================
+    class Meta:
+        verbose_name = "Game"
+        verbose_name_plural = "Game"
+
+Model Update
+============
+
+Model.objects.filter(id = 223).update(field1 = 2)
+sport.objects.filter(id=row).update(empid=employeeid,empname=employeename,empemailid=employeemail,teamname=teamname,game=game,playoption=playoption,playtime=playtime,)
+
+
+class loginadmin(admin.ModelAdmin):
+    model=logindetail
+    list_display = ['empid','emppassword']
+admin.site.register(logindetails,loginadmin)
+
+
+Django template tags
+====================
+
+ {% if error == 'Employee id already registered. Please contact us' %}
+            <div style="color:red;padding-left:350px">Employee Id Registered Already. Please contact us</div>
+
+{% endif %}
+
+ {% if indexerror %}
+            <div style="color:red;padding-left:350px">Already Enrolled in {{request.session.indexerror}}</div>
+            {% endif %}
+
+{{request.session.name}}
+
+{% if loginerror %}
+                 {% if loginerror == 'Password Mismatch' %}
+                 <div style="color:red;padding-left:500px">{{loginerror}}</div>
+                 {% else %}
+                 <div style="color:red;padding-left:400px">{{loginerror}}</div>
+                 {% endif %}
+            {% endif %}
+
+
+Media query
+===========
+   <style>
+ * {
+  box-sizing: border-box;
+}
+
+
+ div#newslettermedia {
+
+  }
+
+
+@media screen and (max-width: 600px) {
+  div#newslettermedia {
+    margin-left:75px;
+  }
+}
+
+    </style>
+
+
+
+Redirect page
+=============
+
+return HttpResponseRedirect('/')
+return redirect('test:index')
+
+
+Admintemplatemodification
+=========================
+
+https://www.youtube.com/watch?v=eosXCVcgtPw&t=867s
+
+
+Read/Write Excel
+================
+https://django-import-export.readthedocs.io/en/latest/getting_started.html#test-data
+
+https://adiramadhan17.medium.com/django-admin-export-to-excel-csv-and-others-94f8247304ba
+
+Export as Excel -Good one
+===============
+
+pip install django-import-export
+
+from import_export.admin import ImportExportModelAdmin
+
+class foodResource(resources.ModelResource):
+
+    class Meta:
+        model = Food
+        exclude = ('id',)
+        import_id_fields = ('primarykeyfield',)
+
+class foodAdmin(ImportExportModelAdmin):
+
+    resource_class = foodResource
+
+    search_fields =('teamlead_id',)
+
+    list_display = ['process_date','teamlead_name']
+
+admin.site.register(Food,foodAdmin)
+
+Export as Excel
+===============
+class ExportCsvMixin:
+    def export_as_csv(self, request, queryset):
+
+        meta = self.model._meta
+        field_names = [field.name for field in meta.fields if field.name!="id"]
+
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename={}.csv'.format(meta)
+        writer = csv.writer(response)
+
+        writer.writerow(field_names)
+        for obj in queryset:
+            row = writer.writerow([getattr(obj, field) for field in field_names])
+
+        return response
+
+    export_as_csv.short_description = "Download Report"
+
+
+
+
+Read Excel
+===========
+    <div class="files color form-group mb-3">
+        <form name = "form" enctype = "multipart/form-data"
+         action = "{% url 'Redington:reademployeesfromexcel' %}" method = "POST" >
+         {% csrf_token %}
+        <input id="fileid" type="file" name="excel_file">
+        <input id="submit" type="submit" value="submit">
+        </form>
+    </div>
+
+    excel_file = request.FILES['excel_file']
+    wb= openpyxl.load_workbook(excel_file,data_only=True)
+    worksheet = wb.worksheets[0]
+    excel_data = list()
+
+    rownum=1
+    for row in worksheet.iter_rows():
+        if rownum!=1:
+            row_data = list()
+            for cell in row:
+                row_data.append(str(cell.value))
+
+WriteExcel
+==========
+
+    Redbots = Redbot.objects.all()
+    response = HttpResponse(content_type='application/vnd.ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="RedBot.xlsx"'
+    workbook = xlsxwriter.Workbook(response, {'in_memory': True})
+    worksheet = workbook.add_worksheet()
+    worksheet.write(0, 0, "BOT NO")
+    worksheet.write(0, 1, "DATE")
+    worksheet.write(0, 2, "END DATE")
+    worksheet.write(0, 3, "BOT NAME")
+    worksheet.write(0, 4, "DEVELOPER NAME")
+    worksheet.write(0, 5, "PROCESS NAME")
+    worksheet.write(0, 6, "SUBPROCESS NAME")
+    worksheet.write(0, 7, "POC NAME")
+    worksheet.write(0, 8, "TYPE")
+    worksheet.write(0, 9, "STATUS")
+
+    row=1
+    for redbot in Redbots:
+        worksheet.write(row,0,redbot.Bot_no)
+        worksheet.write(row, 1, redbot.Date)
+        worksheet.write(row, 2, redbot.End_Date)
+        worksheet.write(row, 3, redbot.Bot_name)
+        worksheet.write(row, 4, redbot.Developer_name)
+        worksheet.write(row, 5, redbot.Process_name)
+        worksheet.write(row, 6, redbot.Subprocess_name)
+        worksheet.write(row, 7, redbot.POC_name)
+        worksheet.write(row, 8, redbot.Type)
+        worksheet.write(row, 9, redbot.Status)
+        row=row+1
+
+    workbook.close()
+
+    return response
+
+settings.py
+===============
+
+CSRF_TRUSTED_ORIGINS = ['https://restless-moon-04612.pktriot.net']
+
+
+
+Hosting
+=======
+
+https://packetriot.com/
+pktriot.exe configure
+pktriot.exe tunnel http add --domain throbbing-sky-62245.pktriot.net --destination localhost --http 8000 --letsencrypt
+pktriot.exe start
+
+https://restless-moon-04612.pktriot.net
+
+
+How to connect wamp with django
+===============================
+
+https://www.youtube.com/watch?v=F6-yJpPEpoE&t=458s
+
+How to connect xamp with django
+===============================
+https://www.youtube.com/watch?v=VnR5O4IjmOs&t=556s
+
+download 1 st 64 bit file
+
+mod_wsgi-4.9.0-cp310-cp310-win_amd64.whl
+
+No need studio download or mod_wsgi install
+
+studio download
+===============
+
+https://data-flair.training/blogs/create-quiz-application-python-django/
+
+https://redingtonscm-my.sharepoint.com/:u:/r/personal/38100897_redingtongulf_com/Documents/Microsoft%20visual%20studio%202022/vs_BuildTools.exe?csf=1&web=1&e=o8TjWS
+
+
+
+Excel Write
+============
+
+Redbots = Redbot.objects.all()
+    response = HttpResponse(content_type='application/vnd.ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="RedBot.xlsx"'
+    workbook = xlsxwriter.Workbook(response, {'in_memory': True})
+    worksheet = workbook.add_worksheet()
+    worksheet.write(0, 0, "BOT NO")
+    worksheet.write(0, 1, "DATE")
+    worksheet.write(0, 2, "END DATE")
+    worksheet.write(0, 3, "BOT NAME")
+    worksheet.write(0, 4, "DEVELOPER NAME")
+    worksheet.write(0, 5, "PROCESS NAME")
+    worksheet.write(0, 6, "SUBPROCESS NAME")
+    worksheet.write(0, 7, "POC NAME")
+    worksheet.write(0, 8, "TYPE")
+    worksheet.write(0, 9, "STATUS")
+
+    row=1
+    for redbot in Redbots:
+        worksheet.write(row,0,redbot.Bot_no)
+        worksheet.write(row, 1, redbot.Date)
+        worksheet.write(row, 2, redbot.End_Date)
+        worksheet.write(row, 3, redbot.Bot_name)
+        worksheet.write(row, 4, redbot.Developer_name)
+        worksheet.write(row, 5, redbot.Process_name)
+        worksheet.write(row, 6, redbot.Subprocess_name)
+        worksheet.write(row, 7, redbot.POC_name)
+        worksheet.write(row, 8, redbot.Type)
+        worksheet.write(row, 9, redbot.Status)
+        row=row+1
+
+    workbook.close()
+
+    return response
+
+
+Excel Read
+==========
+
+def reademployees_excel(request):
+    excel_file = request.FILES['excel_file']
+    wb= openpyxl.load_workbook(excel_file,data_only=True)
+    worksheet = wb.worksheets[0]
+    excel_data = list()
+
+    rownum=1
+    for row in worksheet.iter_rows():
+        if rownum!=1:
+            row_data = list()
+            for cell in row:
+                row_data.append(str(cell.value))
+
+            team=row_data[1];group=row_data[2];employeeid=row_data[3];name=row_data[4];designation=row_data[5];location=row_data[6];
+            role=row_data[7];spoc=row_data[8];lead=row_data[9];manager=row_data[10];bizunit=row_data[11];suppregion=row_data[12];
+            .....
+            trans = row_data[39]; grouping = row_data[40]; batchno=row_data[41]; sbu=row_data[42]
+
+            result = Redington_India_employees.objects.filter(Employee_ID=employeeid)
+            if result.exists():
+                pass
+            else:
+                Redington_India_employee = Redington_India_employees(Team=team, Group=group, Employee_ID=employeeid, Name=name, Designation=designation,
+                                                                     Location=location, Role=role, SPOC=spoc, Lead=lead,
+                                                                     Manager=manager, Biz_Unit=bizunit,
+                                                                     Supply_Region=suppregion, City=city,
+                                                                     Mobile_Number=mobile, 
+                                                                     .................
+                                                                     Batchno=batchno, SBU=sbu,
+                                                                     empimages="Image/no-image.jpg"
+                                                                     )
+                Redington_India_employee.save()
+            row_data.clear()
+        rownum=rownum+1
+
+    wb.close()
+    return redirect("/admin/RedIndiaEmployees/redington_india_employees/")
+
+
+Formprocess
+===========
+def formprocess(request):
+    id = 595
+    firstname = request.POST['first_name']
+    lastname = request.POST['last_name']
+    phone=request.POST['phone']
+    email=request.POST['email']
+    body=request.POST['body']
+    contactform = models.contactform(id,firstname,lastname,phone,email,body)
+    contactform.save()
+    return render(request,'result.html',{'result':'Datasaved'})
+
+appname='form'
+urlname='formprocess'
+ <form id="my-form" method="POST" action="{% url 'form:formprocess'%}">
+                    {% csrf_token %}
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="first_name" placeholder="First Name" autofocus=""></div>
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="last_name" placeholder="Last Name"></div>
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="phonenumber">Phone Number</label><input class="form-control" type="tel" id="phonenumber" name="phone" required="" placeholder="Phone"></div>
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="email">Email Address</label><input class="form-control" type="text" id="email" name="email" required="" placeholder="Email"></div>
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="messages">Last Name</label><textarea class="form-control" name="body" required="" placeholder="Message" rows="8"></textarea></div><button class="btn btn-success" id="form-btn" type="submit">SEND </button>
+                </form>
+
+
+
+MainUrls.py
+===========
+
+"""Redserv URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path,include
+from django.urls import re_path as url
+
+from django.views.static import serve
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+   
+]
+
+if settings.DEBUG:
+    urlpatterns += [url(r'^media/(?P<path>.*)$',serve,{'document_root':settings.MEDIA_ROOT,}), ]
+
+if settings.DEBUG is True:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+
+appurl
+======
+
+from django.urls import path
+from . import  views
+
+app_name="Redbot"
+
+urlpatterns = [
+    path('', views.Rebot_track,name='Redbot'),
+    path('download', views.Redbot_download,name='Redbotdownload')
+]
+
+
+ModelValidator
+==============
+
+def validate_geeks_mail(value):
+    if "@gmail.com" in value:
+        return value
+    else:
+        raise ValidationError("This field accepts mail id of google only")
+
+
+class QuesModel(models.Model):
+    question = models.CharField(max_length=1000, validators =[validate_geeks_mail],null=True)
+    op1 = models.CharField(max_length=500, null=True)
+    op2 = models.CharField(max_length=500, null=True)
+    op3 = models.CharField(max_length=500, null=True)
+    op4 = models.CharField(max_length=500, null=True)
+    ans = models.CharField(max_length=500, null=True)
+
+    def __str__(self):
+        return self.question
+
+
+
+Admin
+=====
+
+class Redbot_admin(admin.ModelAdmin):
+    list_display = ('Bot_no','Date','End_Date','Bot_name','Developer_name','Process_name','Subprocess_name','POC_name','Type','Status','File_upload')
+    search_fields = ['Bot_no']
+
+
+
+from django.contrib import admin
+from .models import Redbot
+from django.contrib.auth.models import Group, User
+from django.contrib.admin.models import LogEntry
+
+admin.site.register(Redbot, Redbot_admin)
+
+admin.site.site_header = 'Redserv'
+admin.site.index_title = ''
+admin.site.site_title = 'Redserv'
+LogEntry.objects.all().delete()
+
+
+
+Migrations_delete
+=================
+
+Use the python manage.py migrate your_app_name XXXX in case you want to unapply migrations after the XXXX migration. Otherwise use python manage.py migrate your_app_name zero to completely unapply all migrations.
+
+Remove the .pyc files under /migrations/_pycache_/ that you have unapplied.
+
+Remove the .py files under migrations/ that you have unapplied.
+
+After deleting files is makemigrations is not working  then type python manage.py makemigration appname
+
+python manage.py makemigrations webpage
+
+
+
+python manage.py migrate webpage zero to undo all actions done in db
+Remove the .pyc files under /migrations/_pycache_/ that you have unapplied.
+Remove the .py files under migrations/ that you have unapplied.
+
+or with specific number
+
+python manage.py migrate webpage 001 to undo till that steps in db
+
+then
+
+Remove the necessary .pyc files under /migrations/_pycache_/ that you have unapplied.
+Remove the necessary .py files under migrations/ that you have unapplied.
+
+
+Reset database Completely
+========================
+
+No need to drop table
+
+python manage.py migrate your_app_name zero
+
+Remove the .pyc files under /migrations/_pycache_/ (Delete all)
+
+Remove the .py files under migrations/ that you have unapplied. ( Except init.py)
+
+python manage.py migrations
+
+python manage.py migrate
+
+
+Override django admin save
+===========================
+from django.contrib.auth.models import User
+
+authors = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def save_model(self, request, obj, form, change):
+        obj.authors = request.user
+        obj.save()
+
+
+Override django admin list display
+==================================
+
+    def get_queryset(self, request):
+        qs = super(PostAdmin, self).get_queryset(request)
+        filtered_query = qs
+        print(request.user)
+        if str(request.user).strip()!='redserv':
+            print("testing2")
+            filtered_query = qs.filter(partner=request.user)
+        return filtered_query
+
+
+Formvalidation with django template
+===================================
+
+class microsoftform(forms.ModelForm):
+
+    def clean(self):
+        file_required = self.cleaned_data['Part_of_RFP_or_RFQ_or_Tender']
+        file_upload =self.cleaned_data['File_Upload']
+        if file_required =="Yes" and (file_upload is None):
+            raise forms.ValidationError("Please upload file")
+
+    class Meta:
+        model = MicrosoftCustomer
+        fields =('__all__')
+
+
+class microsoftformadmin(admin.ModelAdmin):
+
+    model = MicrosoftCustomer
+    form=microsoftform
+    search_fields = ['Customer_Name']
+    readonly_fields = ['partner']
+    list_display = ['Customer_Name',
+                    'Customer_Country', 'Customer_ContactName', 'Customer_AddressLine1', 'Customer_AddressLine2',
+                    'Customer_City', 'Customer_State_or_Province_or_Region', 'Customer_Pincode',
+                    'Customer_Contact_Email',
+                    'Reseller_Name',
+                    'Reseller_Country', 'Reseller_ContactName', 'Reseller_AddressLine1', 'Reseller_AddressLine2',
+                    'Reseller_City',
+                    'Reseller_State_or_Province_or_Region',
+                    'Reseller_Pincode', 'Reseller_Contact_Email', 'Busineess_Segment', 'Vertical',
+                    'Total_Volume_Commited',
+                    'Oportunity_or_ProjectName',
+                    'Authorised_Decision_Maker_Fullname', 'Title_Role_in_the_company',
+                    'Part_of_RFP_or_RFQ_or_Tender', 'File_Upload',
+                    'Provide_all_project_or_prep_sales_activity_related_to_this_opportunity',
+                    'Please_provide_details_about_the_opportunity_including_how_the_end_customer_plans_to_use_the_devices',
+                    'Models', 'Competion', 'Competiors_Name', 'Competiors_Pricing', 'partner']
+
+
+    def save_model(self, request, obj, form, change):
+        obj.partner = request.user.id
+        obj.save()
+
+admin.site.register(MicrosoftCustomer,microsoftformadmin)
+
+
+HTML ELEMENT INTO LIST DJANGO
+==============================
+            for i in range(1, 11):
+                list.append(i)
+                employeelist.append("<input type=text value=" + str(food["cab_emp_id"+str(i)]))
+
+
+{{emp|safe}}
+
+
+
+Django Log
+============
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',  # Change this to INFO
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',  # Change this to INFO
+            'propagate': True,
+        },
+    },
+}
+
+
+In Views
+========
+
+logger = logging.getLogger('django')   (Filename is important)
+logger.info(str(dailyattendance.Employeeno) + "savedsuccessfully")
+
+
+
+
+
+Google
+======
+
+websubmission
+https://www.youtube.com/watch?v=g-SEf4QHnd0 (sitemap)
+https://www.youtube.com/watch?v=Kimd_x8A5x4
+
+https://www.youtube.com/watch?v=XRBEr9JPRA4 (test)
+
+
+https://ahrefs.com/blog/meta-robots/
+
+
+pip install selenium == 4.1.0
+pip install openpyxl
+pip install fake-useragent
+
+
+
+Bootstrap
+=========
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+.col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)
+
+
+mb-4  = To put marginbottom (Instead of break)
+
+<div class="row mb-3">
+
+
+   <div class="col-xl-12 col-lg-12">
+
+     <div class="card">
+     <div class="card-body">Basic card</div>
+     </div>
+
+  </div>
+            
+
+</div>
+
+<div class="card"> good usage Goto web - python - template
+
+
+<div class="row">
+
+    <div class="col-md-5"> Test</div>   'will work from mid size
+    <div class="col-md-5 offset-md-2>Testing</div>
+
+</div>
+
+<div class = "container-fluid"> = Fullpage
+<div class = "container"> = padding left and right
+
+
+<div style="float:left"></div>
+<div style="float:Right"></div>
+
+<div class="col-md-6 text-md-start">
+
+
+position: relative
+position: absolute
+left,right,top,bottom
+
+.image
+{
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../image/flower.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover; 
+height:250px;
+width:250px;
+}
+
+
+
+/Rest Api using python Django
+=============================
+
+@api_view(['GET'])
+def getData(request):
+    Report = City.objects.all()
+    for rep in Report:
+        print(rep.name)
+        print(rep.state)
+        print(rep.temperature)
+    serializer = ItemSerializer(Report,many=True)
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+def addItem(request):
+    received_json_data=json.loads(request.body)
+    return Response(received_json_data)
+
+def tesapi(request):
+    #x = requests.get('http://127.0.0.1:8000/')  /Get
+    url = 'http://127.0.0.1:8000/addcity'
+    myobj = {'chennai': '10'}
+    x = requests.post(url, json=myobj)
+    return HttpResponse('<h1>Hello HttpResponse</h1>' + str(x.text))
+
+
+
+Email
+=====
+
+pythoncom.CoInitialize()
+    outlook = win32.Dispatch('outlook.application')
+    mail = outlook.CreateItem(0)
+    mail.Subject = 'Currencies Exchange Prices as of ' + datetime.now().strftime('%#d %b %Y %H:%M')
+    mail.To = "thanis.albert@redingtongulf.com"
+    #attachment = mail.Attachments.Add(os.getcwd() + "\\Currencies.png")
+    #attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001F", "currency_img")
+    mail.HTMLBody = r"""
+    Dear Carrie,<br><br>
+    The highlighted of currencies exchange prices is as follow:<br><br>
+    <img src="cid:currency_img"><br><br>
+    For more details, you can check the table in the Excel file attached.<br><br>
+    Best regards,<br>
+    Yeung
+    """
+    #mail.Attachments.Add(os.getcwd() + "\\Currencies.xlsx")
+    mail.Send()
+
+
+flex
+====
+
+display: flex;
+flex: 50%;
+position: relative; 
+position: absolute;
+left: 500px;
+flex:1/2/3 to share space among children (imp)
+flex-wrap:wrap
+flex-direction: column (share the column space)
+margin: auto (centre element)
+justify-content: space-between
+@media(min-width: 900px){
+  .container{
+   display:flex
+   }
+
+}
+
+
+Google SEO
+==========
+https://www.youtube.com/watch?v=xtoAfUB6Ubw
+create xml site map in site, download and upload in sitepage
+goto google console-->add property-->add site-->add sitemap by creating link in django
+
+
+
+Selenium
+========
+
+
+//kat-table-body/kat-table-row[position()=1]  = To select first element from array list
+
+
+
+How to raise exception in python
+================================
+
+try:
+
+   try:
+      
+      raise valueerror
+   
+    except valuerror as e:
+  
+
+
+except Exception as e:
+
+
+Django Select
+=============
+
+<select class="form-control" type="text" id="teamname" name="teamname">
+                            {% for team in teamlist %}
+                              {% if team.team == sport.teamname %}
+                              <option value="{{team.team}}" selected>{{team.team}}</option>
+                              {% else %}
+                              <option value="{{team.team}}">{{team.team}}</option>
+                              {% endif %}
+                            {% endfor %}
+                        </select>
+
+
+Regex
+=====
+. any character except newline character 2022-04-04 =>\d\d\d\d.\d\d.\d\d
+\d- match any digit
+\s match any whitespace(" " tab "\t" newline "\n")
+\S match any non-whitespace
+\w match any alphanumeric[a-z A-Z- 0-9]
+\W match any non-alphanumeric
+\b match characters are at begining or at the end of a word r"\bain r"ain\b"
+\B match characters not at the begining (or at the end) of a word r"\Bain r"ain\B"
+
+(Mr|Ms|Mrs)\.?\s\w+
+
+[^\n]+
+
+test_string='''
+2022-10-04
+2022-09-04
+2022.09.04
+2022.08.04
+'''
+pattern = re.compile(r"2022-10-04\n(\d[^\n]*)")
+2022-09-04
+matches = pattern.finditer(test_string)
+
+for match in matches:
+  print(match.group(1))
+
+
+
+Ajax in django
+==============
+$.ajax({
+           type: "POST",
+           url: "{% url 'food:ajax' %}",
+           data:{
+                 userbooks:'',
+                'csrfmiddlewaretoken': '{{csrf_token}}'
+           },
+           datatype:'json',
+           success: function(data) {
+
+                $.each(data, function(key,valueObj){
+    alert(key + "/" + valueObj.Tolocation );
+});
+            }
+       });
+
+
+
+$.ajax({
+                  type: "GET",
+                  url: "{% url 'food:ajax' %}",
+                  success: function(data) {
+                        $.each(data, function(key,valueObj){
+                        alert(key + "/" + valueObj.Tolocation );
+                        });
+                       }
+                     });
+
+
+
+
+def ajaxtest(request):
+    tolocation = Tolocation.objects.all().values()
+    if request.method == 'POST':
+        tolocation = Tolocation.objects.all().values()
+
+        return JsonResponse(list(tolocation), safe=False)
+    else:
+        return JsonResponse("testing2")
+
+
+
+def teamname_tolocation(request):
+
+    tolocation = Tolocation.objects.all().values()
+    myteam_res = myteam.objects.filter(myteam_teamleadid=request.session['username']).values()
+    myteamlist = []
+    if myteam_res.exists():
+        for res in myteam_res:
+            myteamobj = myteamobject()
+            myteamobj.myteam_empid = res["myteam_empid"]
+            myteamobj.myteam_empname = res["myteam_empname"]
+            myteamlist.append(json.dumps(myteamobj.__dict__))
+
+    if request.method == 'GET':
+
+        tolocations = Tolocation.objects.all().values()
+        timings = Timing.objects.all().values()
+
+        for tolocation in tolocations:
+            myteamlist.append(json.dumps(tolocation))
+
+        for timing in timings:
+            myteamlist.append(json.dumps(timing))
+
+        return JsonResponse(myteamlist, safe=False)
+    else:
+        return JsonResponse("testing2")
+
+
+
+Ajax Data passing and retrieve
+=================================
+
+$(document).ready(function() {
+
+  $('#rmname').change(function() {
+    var selectedOption = $(this).val(); // get selected option value
+    alert(selectedOption); // set target element value
+
+
+    $.ajax({
+           type: "POST",
+           url: "{% url 'food:ajax' %}",
+           data:{
+                 userbooks:'userbook',
+                'csrfmiddlewaretoken': '{{csrf_token}}'
+           },
+           datatype:'json',
+           success: function(data) {
+
+             alert(data)
+
+            }
+       });
+
+
+  });
+
+});
+
+
+
+def teamname_tolocation(request):
+
+    print(request.POST["userbooks"])
+    return JsonResponse("testing2", safe=False)
+
+
+JQUERY or Jquery
+================
+
+
+
+        $(document).ready(function(){
+
+           $("#add").click(function(){
+
+              var rowid = parseInt($("hr").prev().attr("id").charAt(3))+1
+
+              if( parseInt($("hr").prev().attr("id").length)==5){
+              var rowid = parseInt($("hr").prev().attr("id").slice(-2))+1
+              }
+
+              var a = "<div class='row' id='row" + rowid + "'><div class='col-sm-12 col-md-2'><div class='form-group mb-3'> <label style='font-size:14px' class='form-label'>Emp.Name </label><select class='form-control' style='font-size:14px' type='text' name='firstname" + rowid + "' id='firstname" + rowid + "'><option style='font-size:14px' id='firstnameoption" + rowid + "' value='Select'>Select</option></select></div></div><div class='col-sm-12 col-md-2'><div class='form-group mb-3'><label style='font-size:14px' class='form-label'>To Location </label><select class='form-control' style='font-size:14px' type='text' id='tolocation" + rowid + "' name='tolocation" + rowid + "'><option style='font-size:14px' value='Select' id='tolocoption" + rowid + "' selected>Select</option></select></div></div><div class='col-sm-12 col-md-2'><div class='form-group mb-3'><label style='font-size:14px' class='form-label'>Timing </label><select style='font-size:14px' class='form-control' type='text' id='timing" + rowid + "' name='timing" + rowid + "'><option value='Select' style='font-size:14px' id='totiming" + rowid + "' selected>Select</option></select></div></div><div class='col-sm-12 col-md-2'><div class='form-group mb-3'><label class='form-label' style='font-size:14px'>MoreInfo</label><input class='form-control' type='text' id='comments" + rowid + "' name='comments" + rowid + "'></input></div></div><div class='col-sm-12 col-md-1'><div class='form-group mb-3'><label style='padding-bottom:20px;font-size:14px'>Veg</label><br><input type='radio' id='veg" + rowid + "' name='food" + rowid + "' value='veg'> </div></div><div class='col-sm-12 col-md-1'><div class='form-group mb-3'><label style='padding-bottom:20px;font-size:14px'>NonVeg</label><br><input type='radio' id='nonveg" + rowid + "' name='food" + rowid + "' value='nonveg'></div></div><div class='col-sm-12 col-md-1'><div class='form-group mb-3'><label style='padding-bottom:20px;font-size:14px'>NoFood</label><br><input type='radio' id='nofood" + rowid + "' name='food" + rowid + "' value=''></div></div><div class='col-sm-12 col-md-1'><div class='form-group mb-3'><label class='btn btn-primary del' id='del" + rowid + "'   value ='" + rowid + "' style='padding-top:5px;margin-top:25px;font-size:14px'>del</label></div></div></div>"
+
+              $("hr").before(a);
+
+               $.ajax({
+                  type: "GET",
+                  url: "{% url 'food:getrmidajax' %}",
+                  success: function(data) {
+                        $.each(data, function(key,valueObj){
+
+                          console.log(valueObj)
+
+                          if (typeof JSON.parse(valueObj).Tolocation != 'undefined' && JSON.parse(valueObj).Tolocation){
+                          var c= "<option value=" + JSON.parse(valueObj).Tolocation + ">" + JSON.parse(valueObj).Tolocation + "</option>"
+                          $("#tolocoption" +rowid).after(c)
+                          }
+
+                          if (typeof JSON.parse(valueObj).timing != 'undefined' && JSON.parse(valueObj).timing){
+                          var d= "<option value='" + JSON.parse(valueObj).timing + "'>" + JSON.parse(valueObj).timing + "</option>"
+                          $("#totiming" +rowid).after(d)
+                          }
+
+                          if (typeof JSON.parse(valueObj).myteam_empid  != 'undefined' && JSON.parse(valueObj).myteam_empid ){
+                          console.log(JSON.parse(valueObj).myteam_empname+"-"+JSON.parse(valueObj).myteam_empid)
+                          var b = "<option value='"+JSON.parse(valueObj).myteam_empname+"-"+JSON.parse(valueObj).myteam_empid+"'>" + JSON.parse(valueObj).myteam_empname + "</option>"
+                          $("#firstnameoption" +rowid).after(b)
+                          }
+                        });
+                        }
+                     });
+
+
+           });
+
+        });
+
+        $(document).on('click', '.del' ,function() {
+
+         $(this).parent().parent().parent().empty()
+
+        });
+
+
+insertbefore
+==============
+
+new element should be covered with $
+
+var b =$("<div class='col-sm-12 col-md-1'><div class='form-group mb-3'><label class='form-label' style='font-size:12px'>Escort</label><select class='form-control' style='font-size:12px;padding-left:0px;' type='text' id='escort" + rw +"' name='escort" + rw + "'><option value='' selected></option><option value='yes'>Yes</option><option value='no' >No</option></select></div></div>");
+                    var c = $("#del" + rw).parent().parent()
+                    b.insertBefore(c)
+
+
+Read Excel Cell in Django Python
+================================
+
+empid = ws.cell(row=i, column=1)
+if empid.value:
+     print(empid.value)
+else:
+     print("empid is not present")
+
+
+
+
+
+
