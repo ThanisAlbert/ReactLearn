@@ -3,31 +3,21 @@ import Home from "./Home";
 import Contactus from "./Contactus";
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./Footer";
+import Loginpage from "./Loginpage";
+
 
 export default function App() {
 
-  const[color, setColor]=useState("yellow")
-
-  const changeconstcolor = ()=>{   
-    setColor("red")
-  }
-
-  const changevariablecolor = (colorname)=>{   
-    setColor(colorname)
-  }
 
   return (
     <div>
 
-<Header changevariablecolor={changevariablecolor}   changeconstcolor={changeconstcolor} colorname={color}></Header>     
-   
-
       <Routes>
+        <Route path="login" element={<Loginpage/>} />
         <Route path="home" element={<Home />} />
         <Route path="contactus" element={<Contactus />} />
       </Routes>  
     
-    <Footer></Footer>
     
     </div>
   );
