@@ -631,11 +631,120 @@ export default function Home(){
 If we click home link It will load Homecomponent alone. header and footer will not load again but display as intially rendered once.check in react component in chrome page. slash is must
 
 
+
+Formdatahandle
+==============
+
+  const[username, usernamechange] = useState("");
+  const[password, passwordchange] = useState("");
+
+  const loginsubmit =(e)=>{
+
+    e.preventDefault();
+
+    console.log(username);
+    console.log(password);
+    
+  }
+
+<form class="user" onSubmit={loginsubmit}>
+<input type="email" value={username} onChange={e=>usernamechange(e.target.value)} class="form-control" id="exampleInputEmail" />
+<input type="password" value={password} onChange={e=>passwordchange(e.target.value)} class="form-control" id="exampleInputPassword" />
+
+<button type="submit" class="btn btn-primary btn-block">Login</button>
+
+</form>
+
+
 Axios
 =====
 
 npm i axios
-npm i axios react-router-dom
+
+ALLOWED_HOSTS = ['*']
+
+
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'corsheaders',
+    'rest_framework',
+    'crud',
+]
+
+
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_ALL_ORIGINS=True
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+ROOT_URLCONF = 'Supermarket.urls'
+
+
+Get Request
+===========
+
+const loginsubmit =(e)=>{
+
+    e.preventDefault();
+    console.log(username);
+    console.log(password);
+
+    Axios.get('http://127.0.0.1:8000/api/loginview/')
+    .then(res=>console.log(res.data))
+    
+  }
+
+
+
+
+
+
+Older One
+========
 
  const[email, setemail] =useState("")
  const[password,setpassword]=useState("")

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Axios from 'axios'
 
 export default function Loginpage(){
 
@@ -9,9 +10,11 @@ export default function Loginpage(){
   const loginsubmit =(e)=>{
 
     e.preventDefault();
-
     console.log(username);
     console.log(password);
+
+    Axios.get('http://127.0.0.1:8000/api/loginview/')
+    .then(res=>console.log(res.data))
     
   }
 
