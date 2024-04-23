@@ -1,7 +1,23 @@
+import { useState } from "react"
+
 export default function Loginpage(){
 
+  const[username, usernamechange] = useState("");
+  const[password, passwordchange] = useState("");
+
+
+  const loginsubmit =(e)=>{
+
+    e.preventDefault();
+
+    console.log(username);
+    console.log(password);
+    
+  }
+
+
 return(
-     
+
     <div>
 
 <div class="container-login">
@@ -15,13 +31,13 @@ return(
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Login</h1>
                   </div>
-                  <form class="user">
+                  <form class="user" onSubmit={loginsubmit}>
                     <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                      <input type="email" value={username} onChange={e=>usernamechange(e.target.value)} class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
                         placeholder="Enter Email Address"/>
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password"/>
+                      <input type="password" value={password} onChange={e=>passwordchange(e.target.value)} class="form-control" id="exampleInputPassword" placeholder="Password"/>
                     </div>
                     
                     <div class="form-group">
@@ -32,7 +48,7 @@ return(
                     </div> 
 
                     <div class="form-group">
-                      <a href="index.html" class="btn btn-primary btn-block">Login</a>
+                      <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </div>
                     <hr/>
                   
