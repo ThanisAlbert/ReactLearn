@@ -3,18 +3,23 @@ import Axios from 'axios'
 
 export default function Loginpage(){
 
-  const[username, usernamechange] = useState("");
-  const[password, passwordchange] = useState("");
+const[username, usernamechange] = useState("thanisalbert")
+const[password, passwordchange] = useState("thanisalbert")
+const[usernames, addusername] = useState(["thanis","albert"])
+const[person,addattribute]=useState({firstname:"thanis", lastrname: "albert", age:36, place: "chennai"})
+const[persons,addperson]=useState([{firstname:"thanis", lastrname: "albert", age:36, place: "chennai"}, {firstname:"jenifer", lastrname: "sylvester", age:33, place: "chennai"}])
 
 
-  const loginsubmit =(e)=>{
+const loginsubmit =(e)=>{
 
     e.preventDefault();
     console.log(username);
-    console.log(password);
 
-    Axios.get('http://127.0.0.1:8000/api/loginview/')
-    .then(res=>console.log(res.data))
+    usernamechange("albertthanis")
+    passwordchange("albertthanis")
+    addusername(data=>([...data,"thanisalbert"]))
+    addattribute(data=>({...data,hometown:"chidambaram"}))
+    addperson(data=>([...data,{firstname:"thanisjenifer", lastrname: "albert", age:36, place: "chennai"}]))
     
   }
 
@@ -56,6 +61,14 @@ return(
                     <hr/>
                   
                   </form>
+                  
+                  <h1>username:</h1>{username}
+                  <h1>password:</h1>{password}
+                  <h1>Listofusernames</h1>{usernames.map(username=>username)}
+                  <h1>Personattribute</h1>{person.firstname}{person.lastrname}{person.place}{person.age}{person.hometown}
+                  <h1>Persons</h1>{persons.map(person=>person.firstname)}
+                
+
                   <hr/>
                   <div class="text-center">
                     <a class="font-weight-bold small" href="register.html">Create an Account!</a>
