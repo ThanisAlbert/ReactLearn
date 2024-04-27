@@ -1,26 +1,35 @@
-import { useState } from "react"
+import { useState} from "react"
+import { useEffect } from "react"
 import Axios from 'axios'
 
 export default function Loginpage(){
 
-const[username, usernamechange] = useState("thanisalbert")
-const[password, passwordchange] = useState("thanisalbert")
-const[usernames, addusername] = useState(["thanis","albert"])
-const[person,addattribute]=useState({firstname:"thanis", lastrname: "albert", age:36, place: "chennai"})
-const[persons,addperson]=useState([{firstname:"thanis", lastrname: "albert", age:36, place: "chennai"}, {firstname:"jenifer", lastrname: "sylvester", age:33, place: "chennai"}])
+const[username, usernamechange]= useState("Thanis")
+const[password, passwordchange]= useState("Albert")
+const[person,addattribute]=useState({Name:"Thanis",Age:34,Location:"Chennai"})
+const[fruits,addfruit]=useState(["Apple","Orange", "Banana"])
+const[persons,addperson]=useState([{Name:"Thanis",Age:34,Location:"Chennai"},{Name:"Albert",Age:34,Location:"Chennai"}])
+const[credentials, addcredential]= useState([]);
+const[trigger, settrigger]=useState(0)
+
+
+useEffect(()=>{   
+  Axios.get('http://127.0.0.1:8000/api/loginview/')
+  .then(res=>addcredential(res.data))
+},[trigger])
 
 
 const loginsubmit =(e)=>{
+    e.preventDefault();      
+    Axios.post('http://127.0.0.1:8000/api/addlogin/',{username:"Jaya",password:"Rani"})
+    .then(res=>settrigger(prevTrigger => prevTrigger + 1))    
+  }
 
-    e.preventDefault();
-    console.log(username);
 
-    usernamechange("albertthanis")
-    passwordchange("albertthanis")
-    addusername(data=>([...data,"thanisalbert"]))
-    addattribute(data=>({...data,hometown:"chidambaram"}))
-    addperson(data=>([...data,{firstname:"thanisjenifer", lastrname: "albert", age:36, place: "chennai"}]))
-    
+  const logindelete =(e)=>{
+    e.preventDefault();      
+    Axios.delete('http://127.0.0.1:8000/api/login_delete/',{ params: { username: username } })
+    .then(res=>settrigger(prevTrigger => prevTrigger + 1))    
   }
 
 
@@ -55,18 +64,18 @@ return(
                     </div>
                     </div> 
 
+                    {
+                     credentials.map((credential)=><h1>{credential.username}{credential.password}</h1>)
+                    }
+                   
+
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </div>
                     <hr/>
                   
                   </form>
-                  
-                  <h1>username:</h1>{username}
-                  <h1>password:</h1>{password}
-                  <h1>Listofusernames</h1>{usernames.map(username=>username)}
-                  <h1>Personattribute</h1>{person.firstname}{person.lastrname}{person.place}{person.age}{person.hometown}
-                  <h1>Persons</h1>{persons.map(person=>person.firstname)}
+               
                 
 
                   <hr/>
