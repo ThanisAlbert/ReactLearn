@@ -1,28 +1,38 @@
 import { useState} from "react"
 import { useEffect } from "react"
+import { useNavigate } from 'react-router-dom'
 import Axios from 'axios'
 
 export default function Loginpage(){
 
-const[username, usernamechange]= useState("Thanis")
-const[password, passwordchange]= useState("Albert")
+const[username, usernamechange]= useState("")
+const[password, passwordchange]= useState("")
 const[person,addattribute]=useState({Name:"Thanis",Age:34,Location:"Chennai"})
 const[fruits,addfruit]=useState(["Apple","Orange", "Banana"])
 const[persons,addperson]=useState([{Name:"Thanis",Age:34,Location:"Chennai"},{Name:"Albert",Age:34,Location:"Chennai"}])
 const[credentials, addcredential]= useState([]);
 const[trigger, settrigger]=useState(0)
-
-
-useEffect(()=>{   
-  Axios.get('http://127.0.0.1:8000/api/loginview/')
-  .then(res=>addcredential(res.data))
-},[trigger])
+const navigate = useNavigate()
 
 
 const loginsubmit =(e)=>{
     e.preventDefault();      
-    Axios.post('http://127.0.0.1:8000/api/addlogin/',{username:"Jaya",password:"Rani"})
-    .then(res=>settrigger(prevTrigger => prevTrigger + 1))    
+    Axios.post('http://127.0.0.1:8000/api/loginview/',{"username":username,"password":password})
+    .then(res => {
+      if (res.data === "valid") {
+          console.log("Login successful");
+          navigate("/success")
+          // Perform actions for successful login
+      } else {
+          console.log("Login failed");
+          navigate("/fail")
+          // Perform actions for failed login
+      }
+     })
+  .catch(error => {
+      console.error("Error:", error);
+      // Perform actions for error handling
+     });   
   }
 
 
@@ -64,10 +74,6 @@ return(
                     </div>
                     </div> 
 
-                    {
-                     credentials.map((credential)=><h1>{credential.username}{credential.password}</h1>)
-                    }
-                   
 
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-block">Login</button>

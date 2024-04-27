@@ -4,6 +4,8 @@ import Contactus from "./Contactus";
 import { Routes, Route, Link } from "react-router-dom";
 import Footer from "./Footer";
 import Loginpage from "./Loginpage";
+import Success from "./Success";
+import Fail from "./Fail";
 
 
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
       <Routes>
         <Route path="" element={<Loginpage/>} />
         <Route path="home" element={<Home />} />
+        <Route path="success" element={<Success />} />
+        <Route path="fail" element={<Fail />} />
         <Route path="contactus" element={<Contactus />} />
       </Routes>  
     
