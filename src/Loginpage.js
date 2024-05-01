@@ -10,15 +10,31 @@ const[password, passwordchange]= useState("")
 const[person,addattribute]=useState({Name:"Thanis",Age:34,Location:"Chennai"})
 const[fruits,addfruit]=useState(["Apple","Orange", "Banana"])
 const[persons,addperson]=useState([{Name:"Thanis",Age:34,Location:"Chennai"},{Name:"Albert",Age:34,Location:"Chennai"}])
+const[results,resultschange]=useState([])
 const[credentials, addcredential]= useState([]);
 const[trigger, settrigger]=useState(0)
 const navigate = useNavigate()
+
+
+const getlogin =(e)=>{
+  e.preventDefault();
+}
+
+useEffect(()=>{
+  Axios.get('http://172.24.3.13:81/api/getlogin/',{ params: { username: username } })
+    .then(res=>resultschange(res.data)) 
+},[username])
 
 
 const loginsubmit =(e)=>{
     e.preventDefault();      
     Axios.post('http://127.0.0.1:8000/api/loginview/',{"username":username,"password":password})
     .then(res => {
+      
+      resultschange(
+        data=>[...data,{username:"newusername",password:"newpassword"}]
+      )
+
       if (res.data === "valid") {
           console.log("Login successful");
           navigate("/success")
@@ -28,6 +44,7 @@ const loginsubmit =(e)=>{
           navigate("/fail")
           // Perform actions for failed login
       }
+
      })
   .catch(error => {
       console.error("Error:", error);
@@ -42,6 +59,7 @@ const loginsubmit =(e)=>{
     .then(res=>settrigger(prevTrigger => prevTrigger + 1))    
   }
 
+  
 
 return(
 
@@ -81,7 +99,11 @@ return(
                     <hr/>
                   
                   </form>
-               
+
+                  {
+results.map(data=><div><h1>{data.username}</h1><h1>{data.password}</h1></div>)
+
+                  }
                 
 
                   <hr/>
